@@ -1,0 +1,15 @@
+{
+    "name": "vendor/project",
+    "description": "Description of project Project.",
+    "authors": [
+        {
+            "name": "Mike Fosmark",
+            "email": "iam@theginger.dk"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.5.0",
+        "smarty/smarty": "v3.1.21",
+        "dotsunited/bundlefu": "v1.0.2"
+    }
+}
