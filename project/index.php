@@ -14,5 +14,7 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Hello, World!</h1>
+        <hr>
+        <p>Content here...</p>
     </body>
 </html>
