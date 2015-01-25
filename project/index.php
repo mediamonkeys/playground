@@ -44,37 +44,37 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-
+            <br><br><br><br><br>
             <div class="row">
                  <div class="col-sm-10 col-sm-offset-1">
                 
                 <div class=" col-sm-4 ">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default text-center">
                         <div class="panel-heading">
                             <h3 class="panel-title">Our prices</h3>
                         </div>
                         <div class="panel-body">
-                            Content here...
+                            billig
                         </div>
                     </div>
                 </div>
                    <div class=" col-sm-4 ">
-                        <div class="panel panel-default">
+                        <div class="panel panel-default text-center">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Our prices</h3>
                             </div>
                             <div class="panel-body">
-                                Content here...
+                                billig
                             </div>
                         </div>
                     </div>
                     <div class=" col-sm-4 ">
-                        <div class="panel panel-default">
+                        <div class="panel panel-default text-center">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Our prices</h3>
                             </div>
                             <div class="panel-body">
-                                Content here...
+                                billig
                             </div>
                         </div>
                     </div>
