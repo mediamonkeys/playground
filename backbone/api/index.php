@@ -121,10 +121,10 @@ function findByName($query) {
 }
 
 function getConnection() {
-	$dbhost="127.0.0.1";
-	$dbuser="root";
-	$dbpass="";
-	$dbname="cellar";
+	$dbhost="mysql31.unoeuro.com";
+	$dbuser="ginger_desi_dk";
+	$dbpass="Slart1161";
+	$dbname="ginger_designs_dk_db";
 	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);	
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $dbh;
