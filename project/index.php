@@ -17,5 +17,13 @@ and open the template in the editor.
         <hr>
         <p>Content here...</p>
         <p>Here I am testing branch merging...</p>
+        
+        <!-- My first commit i new branch -->
+        <footer>
+            Important contact info down here..
+        </footer>
+        
+        
+        
     </body>
 </html>
