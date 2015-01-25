@@ -1,0 +1,13 @@
+/* 
+    Created on : Jan 25, 2015, 3:37:22 PM
+    Author     : urbanmedia
+*/
+.fullPage{
+    color:#f9f8fa;
+    position: absolute;
+    bottom: 0;
+    padding:40px 0;
+    background-color:#383838;
+    width:100%;
+}
+
