@@ -1,0 +1,160 @@
+.sitewrap{
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidebar {
+    background-image: -webkit-linear-gradient(left, color-stop(@navbar-default-link-hover-bg 10px), color-stop(@navbar-default-bg 10px));
+    background-image: linear-gradient(to right, @navbar-default-link-hover-bg 10px, @navbar-default-bg 10px);
+    background-repeat: repeat-x;
+    transition:left linear .2s;
+    width: 250px;
+    background-color: @navbar-default-bg;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    overflow: auto;
+}
+
+.sidebar-nav {
+
+    font-size: 13px;
+    & > ul{
+        & > li{
+            a{
+                line-height: 21px;
+                color: @navbar-default-link-color;
+                background-image: -webkit-linear-gradient(left, color-stop(@navbar-default-link-hover-bg 10px), color-stop(@navbar-default-bg 10px));
+                background-image: linear-gradient(to right, @navbar-default-link-hover-bg 10px, @navbar-default-bg 10px);
+                background-repeat: repeat-x;
+
+                &:hover,
+                    &:focus {
+                    color: @navbar-default-link-hover-color;
+                    background: @navbar-default-link-hover-bg;
+                }
+            }
+            &.active > a {
+                &,
+                &:hover,
+                    &:focus {
+                    color: @navbar-default-link-active-color;
+                    background: @navbar-default-link-active-bg;
+                }
+            }
+            &.disabled > a {
+                &,
+                &:hover,
+                    &:focus {
+                    color: @navbar-default-link-disabled-color;
+                    background: @navbar-default-link-disabled-bg;
+                }
+            }
+        }
+    }
+}
+.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active {
+    outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a {
+    display: block;
+}
+.sidebar-nav ul a {
+    padding: 10px 20px;
+}
+.sidebar-nav ul ul a {
+    padding: 10px 40px;
+    background-image: -webkit-linear-gradient(left, color-stop(lighten(@navbar-default-link-hover-bg, 5%) 10px), color-stop(lighten(@navbar-default-bg, 5%) 10px));
+    background-image: linear-gradient(to right, lighten(@navbar-default-link-hover-bg, 5%) 10px, lighten(@navbar-default-bg, 5%) 10px);
+    background-repeat: repeat-x;
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active {
+    background-image: -webkit-linear-gradient(left, color-stop(lighten(@navbar-default-link-hover-bg, 15%) 10px), color-stop(lighten(@navbar-default-bg, 15%) 10px));
+    background-image: linear-gradient(to right, lighten(@navbar-default-link-hover-bg, 15%) 10px, lighten(@navbar-default-bg, 15%) 10px);
+    background-repeat: repeat-x;
+}
+.sidebar-nav-item {
+    padding-left: 5px;
+}
+.sidebar-nav-item-icon {
+    padding-right: 5px;
+}
+
+.sidebar-nav ul li.toggle-back{
+    display: none;
+}
+.sidebar-nav ul li.sidenav-brand a{
+    padding: 12px 15px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 45px;
+    color: @navbar-inverse-link-active-color;
+    background: @navbar-inverse-link-active-bg;
+}
+
+@media screen and (max-width:@screen-sm){
+    .sidebar {
+        left: -250px;
+        box-shadow:0 0 5px rgba(0,0,0,.4);
+        &.toggled{
+            left: 0;
+        }
+    }
+    .sidebar-nav ul li.toggle-back{
+        display: block;
+        color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        text-align: right;
+        height:45px;
+        line-height: 24px;
+        .text{
+            float:right;
+        }
+        .bars{
+            float:right;
+            padding: 6px 0 0 10px;
+        }
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: @navbar-default-link-active-color;
+            & + .icon-bar {
+                margin-top: 4px;
+            }
+        }
+    }
+    .content {
+        position: static;
+        left: 0;
+        overflow: visible;
+    }
+}

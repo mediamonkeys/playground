@@ -6796,6 +6796,152 @@ input[type="checkbox"] {
   border-bottom-color: #000000;
   color: #000000;
 }
+.sitewrap {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sidebar {
+  background-image: -webkit-linear-gradient(left, color-stop(#272727 10px), color-stop(#333333 10px));
+  background-image: linear-gradient(to right, #272727 10px, #333333 10px);
+  background-repeat: repeat-x;
+  transition: left linear .2s;
+  width: 250px;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 250px;
+  right: 0;
+  overflow: auto;
+}
+.sidebar-nav {
+  font-size: 13px;
+}
+.sidebar-nav > ul > li a {
+  line-height: 21px;
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(left, color-stop(#272727 10px), color-stop(#333333 10px));
+  background-image: linear-gradient(to right, #272727 10px, #333333 10px);
+  background-repeat: repeat-x;
+}
+.sidebar-nav > ul > li a:hover,
+.sidebar-nav > ul > li a:focus {
+  color: #ffffff;
+  background: #272727;
+}
+.sidebar-nav > ul > li.active > a,
+.sidebar-nav > ul > li.active > a:hover,
+.sidebar-nav > ul > li.active > a:focus {
+  color: #ffffff;
+  background: #272727;
+}
+.sidebar-nav > ul > li.disabled > a,
+.sidebar-nav > ul > li.disabled > a:hover,
+.sidebar-nav > ul > li.disabled > a:focus {
+  color: #cccccc;
+  background: transparent;
+}
+.sidebar-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-nav a,
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a:active {
+  outline: none;
+}
+.sidebar-nav ul li,
+.sidebar-nav ul a {
+  display: block;
+}
+.sidebar-nav ul a {
+  padding: 10px 20px;
+}
+.sidebar-nav ul ul a {
+  padding: 10px 40px;
+  background-image: -webkit-linear-gradient(left, color-stop(#343434 10px), color-stop(#404040 10px));
+  background-image: linear-gradient(to right, #343434 10px, #404040 10px);
+  background-repeat: repeat-x;
+}
+.sidebar-nav ul ul a:hover,
+.sidebar-nav ul ul a:focus,
+.sidebar-nav ul ul a:active {
+  background-image: -webkit-linear-gradient(left, color-stop(#4d4d4d 10px), color-stop(#595959 10px));
+  background-image: linear-gradient(to right, #4d4d4d 10px, #595959 10px);
+  background-repeat: repeat-x;
+}
+.sidebar-nav-item {
+  padding-left: 5px;
+}
+.sidebar-nav-item-icon {
+  padding-right: 5px;
+}
+.sidebar-nav ul li.toggle-back {
+  display: none;
+}
+.sidebar-nav ul li.sidenav-brand a {
+  padding: 12px 15px;
+  font-size: 19px;
+  line-height: 21px;
+  height: 45px;
+  color: #ffffff;
+  background: #006687;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    left: -250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  }
+  .sidebar.toggled {
+    left: 0;
+  }
+  .sidebar-nav ul li.toggle-back {
+    display: block;
+    color: #ffffff;
+    background-color: #272727;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    height: 45px;
+    line-height: 24px;
+  }
+  .sidebar-nav ul li.toggle-back .text {
+    float: right;
+  }
+  .sidebar-nav ul li.toggle-back .bars {
+    float: right;
+    padding: 6px 0 0 10px;
+  }
+  .sidebar-nav ul li.toggle-back .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ffffff;
+  }
+  .sidebar-nav ul li.toggle-back .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  .content {
+    position: static;
+    left: 0;
+    overflow: visible;
+  }
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -7089,4 +7235,9 @@ input[type="checkbox"] {
   .hidden-print {
     display: none !important;
   }
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
