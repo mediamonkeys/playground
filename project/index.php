@@ -10,7 +10,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>UrbanMedia</title>
+        <title>MediaMonkeys</title>
 
         <!-- Bootstrap - Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -20,7 +20,7 @@ and open the template in the editor.
     <body>
         <div class="container">
 
-            <h1>UrbanMedia</h1>
+             <h1><img width="80px;" src="mediaMonkeys.png"> MediaMonkeys</h1>
             <hr>
             <div class="row">
                 <div class=" col-sm-9 ">
@@ -44,7 +44,13 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-            <br><br><br><br><br>
+            <br><br>
+            
+            <img class="img-responsive" src="mediaMonkeys.png"> 
+            
+            <br><br>
+            
+            
             <div class="row">
                  <div class="col-sm-10 col-sm-offset-1">
                 
