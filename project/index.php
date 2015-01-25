@@ -16,5 +16,6 @@ and open the template in the editor.
         <h1>Hello, World!</h1>
         <hr>
         <p>Content here...</p>
+        <p>Here I am testing branch merging...</p>
     </body>
 </html>
