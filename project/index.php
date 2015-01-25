@@ -18,6 +18,7 @@ and open the template in the editor.
         <p>Content here...</p>
         <p>Here I am testing branch merging...</p>
         
+        <h1>UNREAL</h1>
         <!-- My first commit i new branch -->
         <footer>
             Important contact info down here..
