@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "smarty/smarty": "v3.1.21"
+        "smarty/smarty": "v3.1.21",
+        "slim/slim": "2.5.0"
     }
 }
