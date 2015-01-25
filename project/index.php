@@ -1,5 +1,5 @@
 <?php
-    require './vendor/autoload.php';
+require './vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <!--
@@ -10,12 +10,82 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>UrbanMedia</title>
+
+        <!-- Bootstrap - Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Additional css -->
+        <link rel="stylesheet" href="vendor/style/urban_style.css">
     </head>
     <body>
-        <h1>Hello, World!</h1>
-        <hr>
-        <p>Content here...</p>
-        <p>Here I am testing branch merging...</p>
+        <div class="container">
+
+            <h1>UrbanMedia</h1>
+            <hr>
+            <div class="row">
+                <div class=" col-sm-9 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Hello world</h3>
+                        </div>
+                        <div class="panel-body">
+                            Content here...
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-3 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Hello world</h3>
+                        </div>
+                        <div class="panel-body">
+                            Content here...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="row">
+                 <div class="col-sm-10 col-sm-offset-1">
+                
+                <div class=" col-sm-4 ">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Our prices</h3>
+                        </div>
+                        <div class="panel-body">
+                            billig
+                        </div>
+                    </div>
+                </div>
+                   <div class=" col-sm-4 ">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Our prices</h3>
+                            </div>
+                            <div class="panel-body">
+                                billig
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-4 ">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Our prices</h3>
+                            </div>
+                            <div class="panel-body">
+                                billig
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fullPage">
+            <div class="container">
+                Important contact info down here..
+            </div>
+        </footer>
+
     </body>
 </html>
