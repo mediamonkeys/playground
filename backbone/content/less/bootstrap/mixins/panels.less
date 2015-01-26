@@ -1,0 +1,33 @@
+// Panels
+
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
+
+    &.panel-colored{
+        background-color: @heading-bg-color;
+        color:@heading-text-color;
+    }
+    border: 0;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    & > .panel-heading {
+        color: @heading-text-color;
+        background-color: @heading-bg-color;
+        border-color: @heading-border;
+
+        & > .panel-title{
+            font-weight: 700;
+        }
+
+        + .panel-collapse > .panel-body {
+            border-top-color: @border;
+        }
+        .badge {
+            color: @heading-bg-color;
+            background-color: @heading-text-color;
+        }
+    }
+    & > .panel-footer {
+        + .panel-collapse > .panel-body {
+            border-bottom-color: @border;
+        }
+    }
+}

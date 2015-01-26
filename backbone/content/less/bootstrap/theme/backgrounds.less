@@ -1,0 +1,95 @@
+
+.portlet-mix(@portlet-primary, @portlet-secondary){
+    -webkit-box-shadow: 0 3px 5px darken(@portlet-primary, 15%);
+    box-shadow: 0 3px 0 darken(@portlet-primary, 15%);
+    background: @portlet-primary;
+    color:@portlet-secondary;
+    footer {
+        a{
+            color:@portlet-secondary;
+            background: darken(@portlet-primary, 5%);
+            &:hover{
+                color:darken(@portlet-secondary, 15%);
+                background: darken(@portlet-primary, 10%);
+            }
+        }
+    }
+
+    .header-title{
+        border-bottom-color: darken(@portlet-primary, 15%);
+        color:darken(@portlet-primary, 15%);
+    }
+}
+
+.portlet{
+    .portlet-mix(@gray-lighter, @gray-dark);
+    padding:25px 25px 0;
+    border-radius: 0 0 3px 3px;
+    margin-bottom: 30px;
+    section{padding:25px 0;}
+    footer {
+        a{
+            margin: 0 -25px;
+            padding: 25px;
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all linear .2s;
+
+            &:before,&:after{
+                display: inline-block;
+                transition: margin linear .2s;
+            }
+
+            &:before{
+                content:"[";
+                margin-right: 5px;
+            }
+
+            &:after{
+                content:"]";
+                margin-left: 5px;
+            }
+
+            &:hover{
+                &:before{
+                    margin-right: 10px;
+                }
+                &:after{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .header-title{
+        display: block;
+        margin:0;
+        font-size: 29px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    &.primary{
+        .portlet-mix(@brand-primary, @gray-lighter);
+    }
+    &.success{
+        .portlet-mix(@brand-success, @gray-lighter);
+    }
+    &.danger{
+        .portlet-mix(@brand-danger, @gray-lighter);
+    }
+    &.info{
+        .portlet-mix(@brand-info, @gray-darker);
+    }
+    &.warning{
+        .portlet-mix(@brand-warning, @gray-darker);
+    }
+    &.black{
+        .portlet-mix(@gray-darker, @gray-light);
+    }
+}
